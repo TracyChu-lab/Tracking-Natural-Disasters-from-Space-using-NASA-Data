@@ -27,8 +27,6 @@ The project aims to identify spatial, temporal, and environmental patterns in wi
 
 `├── code.ipynb        # Main notebook (data collection, cleaning, analysis, visualization)`
 
-`├── fire.csv          # FIRMS wildfire dataset (2020–2025, U.S)`
-
 `├── quiz.py           # Streamlit interactive quiz application`
 
 `├── essay.pdf         # Written report explaining findings`
