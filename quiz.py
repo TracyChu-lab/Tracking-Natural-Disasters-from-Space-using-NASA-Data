@@ -5,7 +5,7 @@ st.title("Wildfire Insights Quiz")
 score = 0
 
 q1 = st.radio(
-    "Which state had the highest average wildfire magnitude in EONET?",
+    "Which state had the highest average wildfire magnitude in Earth Observatory Natural Event Tracker (EONET)?",
     ["California", "Nebraska", "Oregon", "Montana"],
     key="q1"
 )
@@ -17,7 +17,7 @@ if st.button("Check Answer for Q1"):
         st.error("Not quite. The correct answer is Nebraska.")
 
 q2 = st.radio(
-    "Did wildfire detections occur more often during the day or at night in FIRMS?",
+    "Did wildfire detections occur more often during the day or at night in Fire Information for Resource Management System (FIRMS)?",
     ["Daytime", "Nighttime"],
     key="q2"
 )
@@ -30,7 +30,7 @@ if st.button("Check Answer for Q2"):
 
 q3 = st.radio(
     "Which relationship was stronger in your analysis?",
-    ["Temperature vs Fire Count", "Temperature vs FRP"],
+    ["Temperature vs Fire Count", "Temperature vs Fire Radiative Power (FRP)"],
     key="q3"
 )
 
@@ -39,3 +39,15 @@ if st.button("Check Answer for Q3"):
         st.success("Correct! Temperature had a stronger correlation with FRP than with fire count.")
     else:
         st.error("Not quite. Temperature vs FRP was stronger.")
+
+q4 = st.radio(
+    "Wildfire take place the most frequently in which 2 months?",
+    ["Jan-Feb", "May-Jun", "Jul-Aug","Nov-Dec"],
+    key="q4"
+)
+
+if st.button("Check Answer for Q4"):
+    if q4 == "Jul-Aug":
+        st.success("Correct! Most wildfire occur during July to August.")
+    else:
+        st.error("Not quite. Most wildfire occur during July to August.")
