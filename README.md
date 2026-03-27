@@ -29,7 +29,7 @@ The project aims to identify spatial, temporal, and environmental patterns in wi
 
 `├── quiz.py           # Streamlit interactive quiz application`
 
-`├── essay.pdf         # Written report explaining findings`
+`├── essay.md          # Written report explaining findings`
 
 `└── README.md         # Project overview and instructions`
 
